@@ -1,0 +1,19 @@
+import org.junit.Test ;
+import org.junit.Assert;
+
+public class exp {
+
+    public int addNumbers(int a , int b){
+        return a + b ;
+    }
+
+    @Test
+    public void testAddNumbers() {
+        int a = 5;
+        int b = 10;
+        int expected = 15;
+        int actual = addNumbers(a, b);
+        Assert.assertEquals(expected, actual);
+    }
+
+}4
